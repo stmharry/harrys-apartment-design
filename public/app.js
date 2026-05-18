@@ -11,6 +11,22 @@ let viewerPose = {
 let resizeAnimationFrame;
 let resizeInterval;
 
+const PANNELLUM_YAW_SIGN = -1;
+const FOOTPRINT_POLYGON_FT = [
+  { x: -2, y: -4 },
+  { x: 23, y: -4 },
+  { x: 23, y: -2 },
+  { x: 28, y: -2 },
+  { x: 28, y: 12 },
+  { x: 23, y: 12 },
+  { x: 23, y: 13 },
+  { x: 13, y: 13 },
+  { x: 13, y: 5 },
+  { x: 7, y: 5 },
+  { x: 7, y: 9 },
+  { x: -2, y: 9 }
+];
+
 const els = {
   shell: document.querySelector(".shell"),
   libraryPanel: document.querySelector("#libraryPanel"),
@@ -174,7 +190,7 @@ function selectItemWithOptions(item, options = {}) {
     minHfov: 55,
     maxHfov: 120,
     pitch: viewerPose.pitch,
-    yaw: viewerPose.yaw,
+    yaw: toPannellumYaw(viewerPose.yaw),
     hfov: viewerPose.hfov,
     horizonPitch: 0,
     horizonRoll: 0,
@@ -197,7 +213,7 @@ function getHotSpots(item) {
   const space = getSpace(item.space);
   return (space?.hotspots ?? []).map((hotspot) => ({
     pitch: hotspot.pitch ?? -8,
-    yaw: hotspot.yaw,
+    yaw: toPannellumYaw(hotspot.yaw),
     type: "info",
     cssClass: "nav-hotspot",
     createTooltipFunc: createHotspotTooltip,
@@ -278,8 +294,12 @@ function renderMiniMap() {
   if (!els.miniMap || !catalog?.spaces?.length) return;
 
   const spaces = catalog.spaces.filter((space) => space.position_ft);
-  const bounds = getMapBounds(spaces);
+  const bounds = getMapBounds(spaces, FOOTPRINT_POLYGON_FT);
   const edges = getMapEdges(spaces);
+  const footprintPoints = FOOTPRINT_POLYGON_FT.map((point) => {
+    const mapped = mapPoint(point, bounds);
+    return `${mapped.x},${mapped.y}`;
+  }).join(" ");
 
   els.miniMap.innerHTML = `
     <div class="mini-map-head">
@@ -288,6 +308,7 @@ function renderMiniMap() {
     </div>
     <div class="mini-map-board">
       <svg class="mini-map-lines" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon class="mini-map-footprint" points="${footprintPoints}"></polygon>
         ${edges
           .map((edge) => {
             const a = mapPoint(edge.source.position_ft, bounds);
@@ -322,9 +343,13 @@ function renderMiniMap() {
   });
 }
 
-function getMapBounds(spaces) {
+function getMapBounds(spaces, extraPoints = []) {
   const xs = spaces.map((space) => space.position_ft.x);
   const ys = spaces.map((space) => space.position_ft.y);
+  extraPoints.forEach((point) => {
+    xs.push(point.x);
+    ys.push(point.y);
+  });
   return {
     minX: Math.min(...xs),
     maxX: Math.max(...xs),
@@ -440,9 +465,22 @@ function getViewerPose() {
   if (!viewer) return viewerPose;
   return {
     pitch: safeViewerNumber("getPitch", viewerPose.pitch),
-    yaw: safeViewerNumber("getYaw", viewerPose.yaw),
+    yaw: fromPannellumYaw(safeViewerNumber("getYaw", toPannellumYaw(viewerPose.yaw))),
     hfov: safeViewerNumber("getHfov", viewerPose.hfov)
   };
+}
+
+function toPannellumYaw(yaw) {
+  return normalizeYaw(PANNELLUM_YAW_SIGN * yaw);
+}
+
+function fromPannellumYaw(yaw) {
+  return normalizeYaw(PANNELLUM_YAW_SIGN * yaw);
+}
+
+function normalizeYaw(yaw) {
+  if (!Number.isFinite(yaw)) return 0;
+  return ((((yaw + 180) % 360) + 360) % 360) - 180;
 }
 
 function safeViewerNumber(method, fallback) {

@@ -47,8 +47,8 @@
       "reference_image": "assets/reference/washer-dryer-closet-original-viewer.jpg",
       "viewer_reference_image": "assets/reference/washer-dryer-closet-original-viewer.jpg",
       "position_ft": {
-        "x": 2,
-        "y": -1
+        "x": 3,
+        "y": -2
       },
       "default_yaw": 70,
       "hotspots": [
@@ -80,7 +80,7 @@
       "viewer_reference_image": "assets/reference/bathroom-original-viewer.jpg",
       "position_ft": {
         "x": 3,
-        "y": 5
+        "y": 6
       },
       "default_yaw": 105,
       "hotspots": [
@@ -105,8 +105,8 @@
       "reference_image": "assets/reference/kitchen-original-viewer.jpg",
       "viewer_reference_image": "assets/reference/kitchen-original-viewer.jpg",
       "position_ft": {
-        "x": 11,
-        "y": -2
+        "x": 9,
+        "y": -1
       },
       "default_yaw": 75,
       "hotspots": [
@@ -137,8 +137,8 @@
       "reference_image": "assets/reference/dining-room-original-viewer.jpg",
       "viewer_reference_image": "assets/reference/dining-room-original-viewer.jpg",
       "position_ft": {
-        "x": 16,
-        "y": 0
+        "x": 14,
+        "y": 1
       },
       "default_yaw": 25,
       "hotspots": [
@@ -169,8 +169,8 @@
       "reference_image": "assets/reference/living-room-original-viewer.jpg",
       "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
       "position_ft": {
-        "x": 22,
-        "y": -3
+        "x": 20,
+        "y": -1
       },
       "default_yaw": 15,
       "hotspots": [
@@ -201,8 +201,8 @@
       "reference_image": "assets/reference/bedroom-original-viewer.jpg",
       "viewer_reference_image": "assets/reference/bedroom-original-viewer.jpg",
       "position_ft": {
-        "x": 21,
-        "y": 7
+        "x": 18,
+        "y": 8
       },
       "default_yaw": 45,
       "hotspots": [
@@ -233,8 +233,8 @@
       "reference_image": "assets/reference/balcony-original-viewer.jpg",
       "viewer_reference_image": "assets/reference/balcony-original-viewer.jpg",
       "position_ft": {
-        "x": 27,
-        "y": 2
+        "x": 25,
+        "y": 4
       },
       "default_yaw": 80,
       "hotspots": [

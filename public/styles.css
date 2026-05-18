@@ -475,6 +475,13 @@ h3 {
   stroke-width: 1.7;
 }
 
+.mini-map-footprint {
+  fill: rgba(247, 241, 231, 0.09);
+  stroke: rgba(247, 241, 231, 0.42);
+  stroke-linejoin: round;
+  stroke-width: 1.25;
+}
+
 .map-node {
   position: absolute;
   display: flex;
