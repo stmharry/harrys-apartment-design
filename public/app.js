@@ -1,6 +1,7 @@
 let catalog;
 let viewer;
 let activeId = "original";
+let activeSpaceSlug = "living-room";
 let viewerPose = {
   pitch: 0,
   yaw: 15,
@@ -44,14 +45,16 @@ init();
 
 async function init() {
   catalog = await fetch("data/prompts.json").then((response) => response.json());
+  activeSpaceSlug =
+    catalog.spaces.find((space) => space.status === "active")?.slug ?? catalog.spaces[0]?.slug;
   renderSpaces();
   renderStyles();
-  els.originalButton.addEventListener("click", () => selectItem(original));
+  els.originalButton.addEventListener("click", () => selectItem(getOriginalItem()));
   els.copyPrompt.addEventListener("click", copyPrompt);
   els.toggleLibrary.addEventListener("click", () => togglePanel("library"));
   els.toggleDetail.addEventListener("click", () => togglePanel("detail"));
   setupViewerResizeStabilizer();
-  selectItem(original);
+  selectItem(getOriginalItem());
 }
 
 function renderSpaces() {
@@ -59,9 +62,12 @@ function renderSpaces() {
   catalog.spaces.forEach((space) => {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `space-tab ${space.status === "active" ? "is-active" : "is-planned"}`;
+    button.className = `space-tab ${space.slug === activeSpaceSlug ? "is-active" : ""} ${
+      space.status === "active" ? "" : "is-planned"
+    }`;
     button.textContent = space.label;
     button.disabled = space.status !== "active";
+    button.addEventListener("click", () => selectSpace(space.slug));
     els.spaceTabs.append(button);
   });
 }
@@ -89,14 +95,17 @@ function renderStyles() {
     style.variants.forEach((variant) => {
       const item = catalog.items.find(
         (candidate) =>
-          candidate.style_slug === style.slug && candidate.variant_slug === variant.slug
+          candidate.space === activeSpaceSlug &&
+          candidate.style_slug === style.slug &&
+          candidate.variant_slug === variant.slug
       );
       const button = document.createElement("button");
       button.type = "button";
       button.className = "variant-button";
-      button.dataset.id = item.id;
+      button.dataset.id = item?.id ?? `${activeSpaceSlug}--${style.slug}--${variant.slug}`;
       button.textContent = variant.label;
-      button.addEventListener("click", () => selectItem(item));
+      button.disabled = !item;
+      if (item) button.addEventListener("click", () => selectItem(item));
       variants.append(button);
     });
 
@@ -105,13 +114,37 @@ function renderStyles() {
   });
 }
 
+function selectSpace(spaceSlug) {
+  if (spaceSlug === activeSpaceSlug) return;
+  activeSpaceSlug = spaceSlug;
+  renderSpaces();
+  renderStyles();
+  selectItem(getOriginalItem());
+}
+
+function getOriginalItem() {
+  const space = catalog.spaces.find((candidate) => candidate.slug === activeSpaceSlug);
+  const label = space?.label ?? activeSpaceSlug;
+  const referenceImage = space?.viewer_reference_image ?? space?.reference_image;
+
+  return {
+    ...original,
+    id: `${activeSpaceSlug}--original`,
+    variant: label,
+    output_image: referenceImage,
+    notes: `Reference ${label.toLowerCase()} panorama.`,
+    space: activeSpaceSlug
+  };
+}
+
 function selectItem(item) {
   viewerPose = getViewerPose();
   activeId = item.id;
+  updateOriginalButton();
   document
     .querySelectorAll(".variant-button")
     .forEach((button) => button.classList.toggle("is-active", button.dataset.id === activeId));
-  els.originalButton.classList.toggle("is-active", activeId === "original");
+  els.originalButton.classList.toggle("is-active", item.generation_status === "reference");
 
   const panoramaPath = item.output_image;
   if (viewer) viewer.destroy();
@@ -140,6 +173,12 @@ function selectItem(item) {
   els.metaImage.textContent = panoramaPath;
   els.metaGeneration.textContent = readableStatus(item.generation_status);
   els.promptText.textContent = item.prompt;
+}
+
+function updateOriginalButton() {
+  const label = readableSpace(activeSpaceSlug);
+  els.originalButton.querySelector("span").textContent = `Original ${label}`;
+  els.originalButton.querySelector("small").textContent = "Reference panorama";
 }
 
 function readableSpace(slug) {
