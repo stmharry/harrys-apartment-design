@@ -1,0 +1,586 @@
+{
+  "title": "Harry's Apartment Design",
+  "unit": "reference-apartment",
+  "generated_at": "2026-05-17",
+  "viewer": {
+    "library": "Pannellum",
+    "version": "2.5.7",
+    "documentation": "https://pannellum.org/documentation/overview/"
+  },
+  "spaces": [
+    {
+      "slug": "living-room",
+      "label": "Living Room",
+      "status": "active",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg"
+    },
+    {
+      "slug": "entryway",
+      "label": "Entryway",
+      "status": "planned"
+    },
+    {
+      "slug": "kitchen",
+      "label": "Kitchen",
+      "status": "planned"
+    },
+    {
+      "slug": "dining-room",
+      "label": "Dining Room",
+      "status": "planned"
+    },
+    {
+      "slug": "bedroom",
+      "label": "Bedroom",
+      "status": "planned"
+    },
+    {
+      "slug": "balcony",
+      "label": "Balcony",
+      "status": "planned"
+    },
+    {
+      "slug": "bathroom",
+      "label": "Bathroom",
+      "status": "planned"
+    },
+    {
+      "slug": "washer-dryer-closet",
+      "label": "Washer Dryer Closet",
+      "status": "planned"
+    }
+  ],
+  "styles": [
+    {
+      "slug": "japandi",
+      "label": "Japandi",
+      "summary": "Quiet natural materials, low profiles, and warm restraint.",
+      "palette": [
+        "#f0e8dc",
+        "#b88b5e",
+        "#171717"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "scandinavian-practical",
+      "label": "Scandinavian Practical",
+      "summary": "Bright, functional, easy-to-source furniture with controlled color.",
+      "palette": [
+        "#f4f0e7",
+        "#9db0ad",
+        "#df4b32"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "organic-modern",
+      "label": "Organic Modern",
+      "summary": "Curved furniture, earthy texture, and natural stone/wood cues.",
+      "palette": [
+        "#e5d7c8",
+        "#8f563d",
+        "#23352d"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "mid-century-modern",
+      "label": "Mid-Century Modern",
+      "summary": "Walnut, tapered legs, classic silhouettes, and warm accents.",
+      "palette": [
+        "#d8b27c",
+        "#7c3f2c",
+        "#095a4b"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "soft-industrial",
+      "label": "Soft Industrial",
+      "summary": "Blackened metal, leather, and urban texture without changing the shell.",
+      "palette": [
+        "#2d2d2a",
+        "#9c5a33",
+        "#d6c3a5"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "contemporary-hotel",
+      "label": "Contemporary Hotel",
+      "summary": "Polished, tonal, low-clutter comfort with boutique-hotel cues.",
+      "palette": [
+        "#d4c6b6",
+        "#6d6259",
+        "#102a46"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "eclectic-collected",
+      "label": "Eclectic Collected",
+      "summary": "Layered personal objects, mixed eras, color, and plants.",
+      "palette": [
+        "#be5b3b",
+        "#214f84",
+        "#d8b031"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "slug": "bauhaus-postmodern-pop",
+      "label": "Bauhaus/Postmodern Pop",
+      "summary": "Graphic shapes, primary colors, modular forms, and playful contrast.",
+      "palette": [
+        "#f6f2e8",
+        "#1c56a8",
+        "#d92c28"
+      ],
+      "variants": [
+        {
+          "slug": "calm",
+          "label": "Calm"
+        },
+        {
+          "slug": "warm",
+          "label": "Warm"
+        },
+        {
+          "slug": "bold",
+          "label": "Bold"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "living-room--japandi--calm",
+      "space": "living-room",
+      "style": "Japandi",
+      "style_slug": "japandi",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference.\nPrimary request: Create a Japandi calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: restrained Japandi rental-apartment plan with low-profile light oak sofa frame, warm ivory upholstery, slim round nesting table, woven jute rug, one linen floor lamp, pale wood media console, two small sculptural ceramic pieces, and one restrained green plant. Keep walking paths clear and furniture scaled for a compact one-bedroom apartment.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/japandi/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Lowest-risk Japandi option with compact, light-toned pieces."
+    },
+    {
+      "id": "living-room--japandi--warm",
+      "space": "living-room",
+      "style": "Japandi",
+      "style_slug": "japandi",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Japandi warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Japandi rental-apartment plan with a linen oatmeal sofa, low walnut-and-oak coffee table, soft wool rug, rice-paper floor lantern, textured off-white curtains mounted without changing the windows, a narrow wood bench near the view wall, ceramic vessels, and two healthy plants. Keep the palette calm with natural fibers and warm wood.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/japandi/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "More residential and tactile, with lantern lighting and layered wood."
+    },
+    {
+      "id": "living-room--japandi--bold",
+      "space": "living-room",
+      "style": "Japandi",
+      "style_slug": "japandi",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Japandi bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bolder Japandi concept with a sculptural low cream sofa, black-stained wood accent chair, oversized natural-fiber rug, asymmetrical wood media console, one dramatic paper pendant-style floor lamp, bonsai-like plant form, dark ceramic accents, and a single ink-wash inspired textile panel leaning on a wall without adding text. Balanced contrast, still calm and livable.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/japandi/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Higher-contrast Japandi with black accents and sculptural pieces."
+    },
+    {
+      "id": "living-room--scandinavian-practical--calm",
+      "space": "living-room",
+      "style": "Scandinavian Practical",
+      "style_slug": "scandinavian-practical",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Scandinavian Practical calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: restrained Scandinavian practical rental setup with a compact light-gray sofa, white oak coffee table with storage shelf, flatweave rug, simple modular media unit, wall-safe leaning bookcase, small round dining/work table near the window, practical floor lamp, and a few blue-gray textiles. Bright, organized, affordable, easy to maintain.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/scandinavian-practical/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Functional baseline with storage and a laptop/dining table."
+    },
+    {
+      "id": "living-room--scandinavian-practical--warm",
+      "space": "living-room",
+      "style": "Scandinavian Practical",
+      "style_slug": "scandinavian-practical",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Scandinavian Practical warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warmer Scandinavian practical room with a beige slipcovered sofa, pale birch storage pieces, soft checked throw, muted sage accent chair, round oak table that can work for dining or laptop use, cream wool rug, warm task lighting, and tidy open shelving with books and ceramics. Simple, bright, functional, not cluttered.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/scandinavian-practical/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Softer textiles and birch storage for a warmer everyday setup."
+    },
+    {
+      "id": "living-room--scandinavian-practical--bold",
+      "space": "living-room",
+      "style": "Scandinavian Practical",
+      "style_slug": "scandinavian-practical",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Scandinavian Practical bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bolder Scandinavian practical plan with a clean white sofa, cobalt and tomato-red accent textiles, blonde wood storage wall that remains renter-friendly, graphic striped rug, compact pedestal table, playful mushroom-style lamp, and crisp black-framed side table. Bright and functional with controlled color accents.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/scandinavian-practical/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "A practical layout with stronger primary-color accents."
+    },
+    {
+      "id": "living-room--organic-modern--calm",
+      "space": "living-room",
+      "style": "Organic Modern",
+      "style_slug": "organic-modern",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create an Organic Modern calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: calm Organic Modern concept with a rounded cream sofa, travertine-look coffee table, boucle lounge chair, subtle taupe rug, warm wood console, linen drapery feel without changing the window structure, one olive tree, and matte clay vessels. Soft curves, natural texture, quiet palette, generous walking clearance.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/organic-modern/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Neutral curved pieces with one substantial plant."
+    },
+    {
+      "id": "living-room--organic-modern--warm",
+      "space": "living-room",
+      "style": "Organic Modern",
+      "style_slug": "organic-modern",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create an Organic Modern warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Organic Modern room with a curved caramel fabric sofa, walnut sideboard, plaster-look round coffee table, layered oatmeal and rust pillows, chunky handwoven rug, sculptural arched floor lamp, large leafy plant, and a few blackened bronze accents. Inviting, tactile, contemporary, with practical furniture spacing.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/organic-modern/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Warmer upholstery and rust accents without losing softness."
+    },
+    {
+      "id": "living-room--organic-modern--bold",
+      "space": "living-room",
+      "style": "Organic Modern",
+      "style_slug": "organic-modern",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create an Organic Modern bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bold Organic Modern concept with a deep olive curved sofa, oversized irregular natural-stone coffee table, textured cream lounge chairs, dramatic rust and charcoal rug, sculptural black floor lamp, large branches in a vessel, and gallery-like neutral art panels with no text. Earthy, high contrast, still realistic for the rental footprint.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/organic-modern/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Earthier and more dramatic, but still material-driven."
+    },
+    {
+      "id": "living-room--mid-century-modern--calm",
+      "space": "living-room",
+      "style": "Mid-Century Modern",
+      "style_slug": "mid-century-modern",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Mid-Century Modern calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: calm Mid-Century Modern rental plan with a slim walnut-framed sofa in warm gray, tapered-leg coffee table, low walnut media credenza, simple arc floor lamp, small leather sling chair, neutral geometric rug, and restrained brass accents. Keep the layout open and compact, with classic proportions rather than theme-park styling.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/mid-century-modern/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Classic mid-century proportions with restrained color."
+    },
+    {
+      "id": "living-room--mid-century-modern--warm",
+      "space": "living-room",
+      "style": "Mid-Century Modern",
+      "style_slug": "mid-century-modern",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Mid-Century Modern warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Mid-Century Modern room with a caramel leather sofa, walnut credenza, oval teak coffee table, rust and mustard pillows, vintage-style patterned rug, globe floor lamp, compact bar cart, and a tall rubber plant. Period-inspired but polished, scaled for apartment living and not overcrowded.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/mid-century-modern/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Leather, teak, and mustard/rust accents."
+    },
+    {
+      "id": "living-room--mid-century-modern--bold",
+      "space": "living-room",
+      "style": "Mid-Century Modern",
+      "style_slug": "mid-century-modern",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Mid-Century Modern bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bold Mid-Century Modern concept with an emerald velvet sofa, walnut-and-cane media console, sculptural orange lounge chair, sunburst-style mirror without text, black tripod floor lamp, graphic cream-and-black rug, brass accents, and a strong but balanced palette. Keep it sophisticated and renter-friendly.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/mid-century-modern/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "A stronger color story with emerald and orange."
+    },
+    {
+      "id": "living-room--soft-industrial--calm",
+      "space": "living-room",
+      "style": "Soft Industrial",
+      "style_slug": "soft-industrial",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Soft Industrial calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: calm Soft Industrial concept with a charcoal fabric sofa, black metal-and-oak coffee table, warm leather ottoman, neutral woven rug, slim black floor lamp, low media console, a few concrete-look planters, and softened linen textiles. Urban city-apartment feeling without exposed fake brick or structural changes.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/soft-industrial/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Industrial references through furniture, not fake architecture."
+    },
+    {
+      "id": "living-room--soft-industrial--warm",
+      "space": "living-room",
+      "style": "Soft Industrial",
+      "style_slug": "soft-industrial",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Soft Industrial warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Soft Industrial room with a cognac leather sofa, blackened steel side tables, reclaimed-wood style media bench, vintage Persian-style rug, matte black reading lamp, amber glass accents, warm gray curtains, and leafy plants. City apartment mood, warmer than a loft, with clear circulation.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/soft-industrial/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Cognac leather and amber details make the urban lane softer."
+    },
+    {
+      "id": "living-room--soft-industrial--bold",
+      "space": "living-room",
+      "style": "Soft Industrial",
+      "style_slug": "soft-industrial",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Soft Industrial bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bold Soft Industrial concept with a dark graphite sofa, cognac leather lounge chair, black steel shelving unit, large distressed charcoal-and-rust rug, concrete-look coffee table, exposed-bulb style floor lamp, moody artwork with no text, and warm amber accessories. Edgy but not cluttered; preserve rental walls and fixtures.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/soft-industrial/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Darkest of the industrial set, with stronger contrast."
+    },
+    {
+      "id": "living-room--contemporary-hotel--calm",
+      "space": "living-room",
+      "style": "Contemporary Hotel",
+      "style_slug": "contemporary-hotel",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Contemporary Hotel calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: calm Contemporary Hotel concept with a tailored warm-gray sofa, slim marble-look coffee table, soft ivory rug, low walnut console, pair of matching side tables, linen drape effect without changing windows, discreet brass floor lamp, and a few curated neutral accessories. Quiet luxury, tidy, move-in ready.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/contemporary-hotel/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Tonal, polished baseline with hotel-like symmetry."
+    },
+    {
+      "id": "living-room--contemporary-hotel--warm",
+      "space": "living-room",
+      "style": "Contemporary Hotel",
+      "style_slug": "contemporary-hotel",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Contemporary Hotel warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Contemporary Hotel concept with a plush taupe sofa, channel-tufted accent chair, round stone coffee table, layered cream rug, smoked-glass side table, warm walnut media console, soft brass lighting, and tonal pillows in camel, ivory, and charcoal. Sophisticated and comfortable without crowding the room.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/contemporary-hotel/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "More plush and residential while staying polished."
+    },
+    {
+      "id": "living-room--contemporary-hotel--bold",
+      "space": "living-room",
+      "style": "Contemporary Hotel",
+      "style_slug": "contemporary-hotel",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Contemporary Hotel bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bold Contemporary Hotel concept with a deep navy velvet sofa, sculptural cream lounge chair, black marble-look coffee table, oversized tonal rug, polished brass floor lamp, dark walnut console, and a few gallery-level accessories. Dramatic boutique-hotel mood while preserving open circulation and rental practicality.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/contemporary-hotel/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "A darker boutique-hotel option with navy and brass."
+    },
+    {
+      "id": "living-room--eclectic-collected--calm",
+      "space": "living-room",
+      "style": "Eclectic Collected",
+      "style_slug": "eclectic-collected",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create an Eclectic Collected calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: calm Eclectic Collected room with a comfortable neutral sofa, vintage wood coffee table, mismatched but harmonious side chairs, layered kilim-style rug, collected books, ceramic lamps, framed art panels with no text, and several plants. Personal and layered, but edited enough for a compact apartment.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/eclectic-collected/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Collected but still restrained enough for daily use."
+    },
+    {
+      "id": "living-room--eclectic-collected--warm",
+      "space": "living-room",
+      "style": "Eclectic Collected",
+      "style_slug": "eclectic-collected",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create an Eclectic Collected warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Eclectic Collected room with a rust velvet sofa, carved wood coffee table, patterned rug, cane accent chair, warm table lamps, stacked art leaning on the wall with no text, plants of varied heights, and a mix of brass, ceramic, and woven details. Collected over time, colorful but balanced.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/eclectic-collected/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Warmer, more personal, and more textile-driven."
+    },
+    {
+      "id": "living-room--eclectic-collected--bold",
+      "space": "living-room",
+      "style": "Eclectic Collected",
+      "style_slug": "eclectic-collected",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create an Eclectic Collected bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bold Eclectic Collected concept with a sapphire blue sofa, marigold accent chair, layered patterned rugs, sculptural vintage coffee table, colorful gallery wall art panels with no text, mixed wood and brass side tables, many plants, and globally inspired textiles. Expressive, curated, and still physically plausible for the room.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/eclectic-collected/bold.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Most colorful collected option."
+    },
+    {
+      "id": "living-room--bauhaus-postmodern-pop--calm",
+      "space": "living-room",
+      "style": "Bauhaus/Postmodern Pop",
+      "style_slug": "bauhaus-postmodern-pop",
+      "variant": "Calm",
+      "variant_slug": "calm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Bauhaus/Postmodern Pop calm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: calm Bauhaus/Postmodern Pop concept with a clean white sofa, black tubular side chair, primary-color accent pillows in red, blue, and yellow, simple round coffee table, geometric rug, modular white storage cubes, and one sculptural floor lamp. Graphic and disciplined, not chaotic.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/bauhaus-postmodern-pop/calm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Graphic but controlled, with primary-color accents."
+    },
+    {
+      "id": "living-room--bauhaus-postmodern-pop--warm",
+      "space": "living-room",
+      "style": "Bauhaus/Postmodern Pop",
+      "style_slug": "bauhaus-postmodern-pop",
+      "variant": "Warm",
+      "variant_slug": "warm",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Bauhaus/Postmodern Pop warm living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: warm Bauhaus/Postmodern Pop concept with a cream sofa, rounded red lounge chair, blue side table, yellow sculptural lamp, checkerboard rug in soft beige and black, modular shelving, and playful curved objects. Keep the room cheerful and balanced, with furniture scaled for real living.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/bauhaus-postmodern-pop/warm.jpg",
+      "generation_status": "built-in-image-generation",
+      "notes": "Warmer and more playful, with rounded postmodern forms."
+    },
+    {
+      "id": "living-room--bauhaus-postmodern-pop--bold",
+      "space": "living-room",
+      "style": "Bauhaus/Postmodern Pop",
+      "style_slug": "bauhaus-postmodern-pop",
+      "variant": "Bold",
+      "variant_slug": "bold",
+      "prompt": "Use case: precise-object-edit\nAsset type: equirectangular 360 panorama for an interior design planning web gallery\nInput image: use the provided living-room reference panorama as the visual reference, not any generated variant.\nPrimary request: Create a Bauhaus/Postmodern Pop bold living room furnishing concept in the same reference apartment.\nPreserve exactly: seamless equirectangular 360 panorama format, camera position, room geometry, wall/window/door locations, balcony glazing, ceiling height, built-in kitchen and hallway openings, floor footprint, daylight direction, and all fixed architectural fixtures.\nChange only: furniture, textiles, movable decor, rugs, lamps, plants, and styling.\nDesign direction: bold Bauhaus/Postmodern Pop concept with a cobalt sofa, red geometric lounge chair, yellow cube side table, black-and-white graphic rug, sculptural floor lamp, modular color-block storage, and abstract wall art panels with no text. High-energy, graphic, and intentionally composed rather than cluttered.\nQuality: photorealistic interior visualization, realistic shadows, cohesive panoramic continuity, no duplicated furniture at seam.\nNegative constraints: no people, pets, logos, labels, text, watermark, structural changes, impossible furniture scale, blocked doors, changed windows, changed kitchen, or altered view outside.",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "output_image": "generated/living-room/bauhaus-postmodern-pop/bold.jpg",
+      "generation_status": "temporary-local-derivative",
+      "notes": "Highest-energy graphic option in the set."
+    }
+  ]
+}

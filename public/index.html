@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry's Apartment Design</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <aside id="libraryPanel" class="library" aria-label="Interior style collection">
+        <button
+          id="toggleLibrary"
+          class="panel-toggle"
+          type="button"
+          aria-controls="libraryPanel"
+          aria-expanded="true"
+          title="Collapse style library"
+        >
+          <span class="toggle-icon" aria-hidden="true">&lt;</span>
+          <span class="toggle-label">Styles</span>
+        </button>
+
+        <div class="panel-content">
+          <div class="mast">
+            <p class="kicker">Design Planning</p>
+            <h1>Interior Style Panorama Gallery</h1>
+          </div>
+
+          <section class="spaces" aria-label="Spaces">
+            <div id="spaceTabs" class="space-tabs"></div>
+          </section>
+
+          <section class="original-card">
+            <button id="originalButton" class="original-button" type="button">
+              <span>Original Living Room</span>
+              <small>Reference panorama</small>
+            </button>
+          </section>
+
+          <section id="styleList" class="style-list" aria-label="Styles"></section>
+        </div>
+      </aside>
+
+      <section class="stage" aria-label="Panorama viewer">
+        <div class="viewer-frame">
+          <div id="panorama"></div>
+          <div class="viewer-label">
+            <span id="viewerStyle">Original</span>
+            <strong id="viewerVariant">Living Room</strong>
+          </div>
+        </div>
+      </section>
+
+      <aside id="detailPanel" class="detail" aria-label="Prompt detail">
+        <button
+          id="toggleDetail"
+          class="panel-toggle"
+          type="button"
+          aria-controls="detailPanel"
+          aria-expanded="true"
+          title="Collapse prompt detail"
+        >
+          <span class="toggle-icon" aria-hidden="true">&gt;</span>
+          <span class="toggle-label">Prompt</span>
+        </button>
+
+        <div class="panel-content">
+          <div class="detail-top">
+            <p class="kicker">Prompt Record</p>
+            <h2 id="detailTitle">Original Living Room</h2>
+            <p id="detailNotes">Reference living room panorama.</p>
+          </div>
+
+          <dl class="meta-grid">
+            <div>
+              <dt>Space</dt>
+              <dd id="metaSpace">Living Room</dd>
+            </div>
+            <div>
+              <dt>Image</dt>
+              <dd id="metaImage">assets/reference/living-room-original-viewer.jpg</dd>
+            </div>
+            <div>
+              <dt>Generation</dt>
+              <dd id="metaGeneration">Reference</dd>
+            </div>
+          </dl>
+
+          <div class="prompt-box">
+            <div class="prompt-head">
+              <span>Generation Prompt</span>
+              <button id="copyPrompt" type="button">Copy</button>
+            </div>
+            <pre id="promptText">Original reference image. No generated prompt.</pre>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
