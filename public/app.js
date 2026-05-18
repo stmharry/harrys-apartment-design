@@ -1,6 +1,13 @@
 let catalog;
 let viewer;
 let activeId = "original";
+let viewerPose = {
+  pitch: 0,
+  yaw: 15,
+  hfov: 98
+};
+let resizeAnimationFrame;
+let resizeInterval;
 
 const els = {
   shell: document.querySelector(".shell"),
@@ -43,6 +50,7 @@ async function init() {
   els.copyPrompt.addEventListener("click", copyPrompt);
   els.toggleLibrary.addEventListener("click", () => togglePanel("library"));
   els.toggleDetail.addEventListener("click", () => togglePanel("detail"));
+  setupViewerResizeStabilizer();
   selectItem(original);
 }
 
@@ -98,6 +106,7 @@ function renderStyles() {
 }
 
 function selectItem(item) {
+  viewerPose = getViewerPose();
   activeId = item.id;
   document
     .querySelectorAll(".variant-button")
@@ -112,15 +121,16 @@ function selectItem(item) {
     autoLoad: true,
     showControls: true,
     compass: false,
-    hfov: 98,
     minHfov: 55,
     maxHfov: 120,
-    pitch: 0,
-    yaw: 15,
+    pitch: viewerPose.pitch,
+    yaw: viewerPose.yaw,
+    hfov: viewerPose.hfov,
     horizonPitch: 0,
     horizonRoll: 0,
     backgroundColor: [17, 19, 18]
   });
+  stabilizeViewerResize();
 
   els.viewerStyle.textContent = item.style;
   els.viewerVariant.textContent = item.variant;
@@ -178,12 +188,56 @@ function setPanelCollapsed(panelName, collapsed) {
       ? "<"
       : ">";
 
-  resizeViewerSoon();
+  stabilizeViewerResize();
 }
 
-function resizeViewerSoon() {
-  window.setTimeout(() => {
-    if (viewer?.resize) viewer.resize();
-    window.dispatchEvent(new Event("resize"));
-  }, 220);
+function getViewerPose() {
+  if (!viewer) return viewerPose;
+  return {
+    pitch: safeViewerNumber("getPitch", viewerPose.pitch),
+    yaw: safeViewerNumber("getYaw", viewerPose.yaw),
+    hfov: safeViewerNumber("getHfov", viewerPose.hfov)
+  };
+}
+
+function safeViewerNumber(method, fallback) {
+  try {
+    const value = viewer?.[method]?.();
+    return Number.isFinite(value) ? value : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function setupViewerResizeStabilizer() {
+  els.shell.addEventListener("transitionrun", (event) => {
+    if (event.propertyName === "grid-template-columns") stabilizeViewerResize();
+  });
+  els.shell.addEventListener("transitionend", (event) => {
+    if (event.propertyName === "grid-template-columns") resizeViewerNow();
+  });
+  window.addEventListener("resize", () => stabilizeViewerResize());
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(() => scheduleViewerResize());
+    observer.observe(document.querySelector(".stage"));
+    observer.observe(document.querySelector("#panorama"));
+  }
+}
+
+function stabilizeViewerResize() {
+  resizeViewerNow();
+  scheduleViewerResize();
+  window.clearInterval(resizeInterval);
+  resizeInterval = window.setInterval(resizeViewerNow, 45);
+  window.setTimeout(() => window.clearInterval(resizeInterval), 360);
+}
+
+function scheduleViewerResize() {
+  window.cancelAnimationFrame(resizeAnimationFrame);
+  resizeAnimationFrame = window.requestAnimationFrame(resizeViewerNow);
+}
+
+function resizeViewerNow() {
+  if (viewer?.resize) viewer.resize();
 }
