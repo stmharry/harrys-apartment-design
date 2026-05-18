@@ -6,7 +6,7 @@
     <title>Harry's Apartment Design</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260518-navmap4">
   </head>
   <body>
     <main class="shell">
@@ -47,6 +47,7 @@
       <section class="stage" aria-label="Panorama viewer">
         <div class="viewer-frame">
           <div id="panorama"></div>
+          <div id="miniMap" class="mini-map" aria-label="Apartment navigation map"></div>
           <div class="viewer-label">
             <span id="viewerStyle">Original</span>
             <strong id="viewerVariant">Living Room</strong>
@@ -101,6 +102,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
-    <script src="app.js" type="module"></script>
+    <script src="app.js?v=20260518-navmap4" type="module"></script>
   </body>
 </html>

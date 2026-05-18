@@ -9,48 +9,248 @@
   },
   "spaces": [
     {
-      "slug": "living-room",
-      "label": "Living Room",
-      "status": "active",
-      "reference_image": "assets/reference/living-room-original-viewer.jpg",
-      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg"
-    },
-    {
       "slug": "entryway",
       "label": "Entryway",
-      "status": "planned"
+      "status": "active",
+      "reference_image": "assets/reference/entryway-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/entryway-original-viewer.jpg",
+      "position_ft": {
+        "x": 0,
+        "y": 0
+      },
+      "default_yaw": 20,
+      "hotspots": [
+        {
+          "target": "washer-dryer-closet",
+          "label": "Washer Dryer Closet",
+          "yaw": -35,
+          "pitch": -12
+        },
+        {
+          "target": "bathroom",
+          "label": "Bathroom",
+          "yaw": -120,
+          "pitch": -12
+        },
+        {
+          "target": "kitchen",
+          "label": "Kitchen",
+          "yaw": 18,
+          "pitch": -12
+        }
+      ]
+    },
+    {
+      "slug": "washer-dryer-closet",
+      "label": "Washer Dryer Closet",
+      "status": "active",
+      "reference_image": "assets/reference/washer-dryer-closet-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/washer-dryer-closet-original-viewer.jpg",
+      "position_ft": {
+        "x": 2,
+        "y": -1
+      },
+      "default_yaw": 70,
+      "hotspots": [
+        {
+          "target": "entryway",
+          "label": "Entryway",
+          "yaw": -45,
+          "pitch": -12
+        },
+        {
+          "target": "bathroom",
+          "label": "Bathroom",
+          "yaw": -105,
+          "pitch": -12
+        },
+        {
+          "target": "kitchen",
+          "label": "Kitchen",
+          "yaw": 70,
+          "pitch": -12
+        }
+      ]
+    },
+    {
+      "slug": "bathroom",
+      "label": "Bathroom",
+      "status": "active",
+      "reference_image": "assets/reference/bathroom-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/bathroom-original-viewer.jpg",
+      "position_ft": {
+        "x": 3,
+        "y": 5
+      },
+      "default_yaw": 105,
+      "hotspots": [
+        {
+          "target": "entryway",
+          "label": "Entryway",
+          "yaw": 105,
+          "pitch": -12
+        },
+        {
+          "target": "washer-dryer-closet",
+          "label": "Washer Dryer Closet",
+          "yaw": 135,
+          "pitch": -12
+        }
+      ]
     },
     {
       "slug": "kitchen",
       "label": "Kitchen",
-      "status": "planned"
+      "status": "active",
+      "reference_image": "assets/reference/kitchen-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/kitchen-original-viewer.jpg",
+      "position_ft": {
+        "x": 11,
+        "y": -2
+      },
+      "default_yaw": 75,
+      "hotspots": [
+        {
+          "target": "entryway",
+          "label": "Entryway",
+          "yaw": -65,
+          "pitch": -12
+        },
+        {
+          "target": "washer-dryer-closet",
+          "label": "Washer Dryer Closet",
+          "yaw": -115,
+          "pitch": -12
+        },
+        {
+          "target": "dining-room",
+          "label": "Dining Room",
+          "yaw": 78,
+          "pitch": -12
+        }
+      ]
     },
     {
       "slug": "dining-room",
       "label": "Dining Room",
-      "status": "planned"
+      "status": "active",
+      "reference_image": "assets/reference/dining-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/dining-room-original-viewer.jpg",
+      "position_ft": {
+        "x": 16,
+        "y": 0
+      },
+      "default_yaw": 25,
+      "hotspots": [
+        {
+          "target": "kitchen",
+          "label": "Kitchen",
+          "yaw": -65,
+          "pitch": -12
+        },
+        {
+          "target": "living-room",
+          "label": "Living Room",
+          "yaw": 28,
+          "pitch": -12
+        },
+        {
+          "target": "bedroom",
+          "label": "Bedroom",
+          "yaw": 105,
+          "pitch": -12
+        }
+      ]
+    },
+    {
+      "slug": "living-room",
+      "label": "Living Room",
+      "status": "active",
+      "reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/living-room-original-viewer.jpg",
+      "position_ft": {
+        "x": 22,
+        "y": -3
+      },
+      "default_yaw": 15,
+      "hotspots": [
+        {
+          "target": "dining-room",
+          "label": "Dining Room",
+          "yaw": 15,
+          "pitch": -12
+        },
+        {
+          "target": "bedroom",
+          "label": "Bedroom",
+          "yaw": -70,
+          "pitch": -12
+        },
+        {
+          "target": "balcony",
+          "label": "Balcony",
+          "yaw": 105,
+          "pitch": -12
+        }
+      ]
     },
     {
       "slug": "bedroom",
       "label": "Bedroom",
       "status": "active",
       "reference_image": "assets/reference/bedroom-original-viewer.jpg",
-      "viewer_reference_image": "assets/reference/bedroom-original-viewer.jpg"
+      "viewer_reference_image": "assets/reference/bedroom-original-viewer.jpg",
+      "position_ft": {
+        "x": 21,
+        "y": 7
+      },
+      "default_yaw": 45,
+      "hotspots": [
+        {
+          "target": "dining-room",
+          "label": "Dining Room",
+          "yaw": 75,
+          "pitch": -12
+        },
+        {
+          "target": "living-room",
+          "label": "Living Room",
+          "yaw": 45,
+          "pitch": -12
+        },
+        {
+          "target": "balcony",
+          "label": "Balcony",
+          "yaw": 125,
+          "pitch": -12
+        }
+      ]
     },
     {
       "slug": "balcony",
       "label": "Balcony",
-      "status": "planned"
-    },
-    {
-      "slug": "bathroom",
-      "label": "Bathroom",
-      "status": "planned"
-    },
-    {
-      "slug": "washer-dryer-closet",
-      "label": "Washer Dryer Closet",
-      "status": "planned"
+      "status": "active",
+      "reference_image": "assets/reference/balcony-original-viewer.jpg",
+      "viewer_reference_image": "assets/reference/balcony-original-viewer.jpg",
+      "position_ft": {
+        "x": 27,
+        "y": 2
+      },
+      "default_yaw": 80,
+      "hotspots": [
+        {
+          "target": "living-room",
+          "label": "Living Room",
+          "yaw": 85,
+          "pitch": -12
+        },
+        {
+          "target": "bedroom",
+          "label": "Bedroom",
+          "yaw": -85,
+          "pitch": -12
+        }
+      ]
     }
   ],
   "styles": [
